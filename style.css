@@ -1,0 +1,308 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/IN-en-20230731-popsignuptwoweeks-perspective_alpha_website_small.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px 12%;
+    position: relative;
+}
+
+.header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    align-items: center;
+}
+
+.logo {
+    width: 9.25rem;
+    height: 2.5rem;
+}
+
+.lang-btn {
+    background: transparent;
+    color: #fff;
+    border-radius: 4px;
+    height: 35px;
+    width: auto;
+    padding: 0 10px;
+    font-size: 15px;
+    margin-right: 20px;
+    border: 1px solid #808080;
+    cursor: default;
+}
+
+.dropdown-toggle:focus {
+    outline: 2px solid #fff;
+}
+
+.lang-btn i {
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.lang-btn img {
+    width: 10px;
+}
+
+.signin-btn {
+    background: #db0001;
+    color: #fff;
+    border-radius: 4px;
+    height: 35px;
+    font-size: 15px;
+    padding: 0 10px;
+    border: 0;
+    cursor: pointer;
+}
+
+.header-content {
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 5%;
+}
+
+.header-content h1 {
+    font-weight: 900;
+}
+
+.email-signup {
+    margin-top: 20px;
+}
+
+.email-signup input {
+    height: 55px;
+    width: 400px;
+    background: transparent;
+    margin-right: 5px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    padding: 0 10px;
+    color: #fff;
+}
+
+.email-signup input:focus {
+    outline: 2px solid #fff;
+}
+
+.email-signup input::placeholder {
+    color: #808080;
+    font-size: 15px;
+}
+
+.email-signup button {
+    background: #db0001;
+    color: #fff;
+    border-radius: 4px;
+    height: 55px;
+    width: 200px;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.signin-btn:hover, .email-signup button:hover {
+    background: #af0000;
+}
+
+
+.features {
+    padding: 50px 12%;
+    border-top: 8px solid #696969;
+}
+
+.img-col {
+    width: 50%;
+}
+
+.img-feature-1 {
+    height: 400px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.txt-col {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+}
+
+.txt-col h2 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.txt-col p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.feature2-txt {
+    float: right;
+}
+
+.faq, footer {
+    padding: 50px 12%;
+    border-top: 8px solid #696969;
+    text-align: center;
+}
+
+.accordion {
+    margin: 20px 0;
+}
+
+.accordion-item {
+    background-color: #000;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.accordion-button {
+    background-color: #2d2d2d;
+    color: #fff;
+    height: 80px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin-bottom: 10px;
+}
+
+.accordion-button:hover {
+    background-color: #464646;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #fff;
+    background-color: #464646;
+}
+
+.accordion-body {
+    background-color: #2d2d2d;
+    color: #fff;
+}
+
+footer {
+    text-align: left;
+    color: #ffffffb3;
+}
+
+footer u {
+    cursor: pointer;
+}
+
+.footer-lists {
+    display: flex;
+    text-decoration: underline;
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-top: 10px;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.lang-btn-txt {
+    margin-top: 20px;
+}
+
+#footer-lang-btn {
+    margin-bottom: 20px;
+    cursor: default;
+}
+
+.footer-text {
+    font-size: 0.875rem;
+}
+
+@media screen and (max-width: 991px) {
+    .header {
+        padding: 15px 5%;
+    }
+
+    .logo {
+        width: 6rem;
+        height: 1.6rem;
+    }
+
+    .lang-btn {
+        margin-right: 3px;
+    }
+
+    .txt-col {
+        text-align: center;
+    }
+
+    .img-col {
+        width: 100%;
+    }
+
+    .features-row-reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .email-signup input {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 698px) {
+    #faq-signup-btn {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 663px) {
+    #lang-txt {
+        display: none;
+    }
+
+    .email-signup button {
+        margin-top: 15px;
+    }
+
+    .img-col {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .img-feature-1 {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .header-content h1 {
+        font-weight: 600;
+        font-size: 20px;
+    }
+}
